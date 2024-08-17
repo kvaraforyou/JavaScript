@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.section {
+    padding: 20px;
+    background-color: #f0f0f0; /* Light gray background for the section */
+    position: relative; /* Establish positioning context */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #d3d3d3; /* Gray background for the container */
+    border-radius: 8px; /* Optional: rounded corners */
+    position: relative; /* For positioning context */
+    z-index: 1; /* Ensure container is above the section background */
+}
+
+h1 {
+    position: relative; /* Ensure heading stays in normal flow */
+    z-index: 2; /* Ensure h1 is above the paragraph */
+}
+
+.overlap {
+    background-color: #a9a9a9; /* Darker gray background for the paragraph */
+    padding: 20px;
+    position: absolute; /* Allows the paragraph to overlap the section */
+    left: 0; /* Align to the left edge of the section */
+    right: 0; /* Align to the right edge of the section */
+    top: 100%; /* Position below the container */
+    margin-top: -20px; /* Adjust to overlap the container’s bottom */
+    box-sizing: border-box; /* Include border in the total width */
+    z-index: 0; /* Ensure paragraph is below the heading but above the section’s background */
+}
+
+
+
+
+
